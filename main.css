@@ -158,6 +158,262 @@
       width: 49px;
       height: 49px; }
 
+.cloudy {
+  background-image: linear-gradient(to bottom, #A9AEB1 0%, #EBECEC 100%); }
+  .cloudy .cloud-one {
+    position: relative;
+    top: 50px;
+    left: -30px;
+    animation: pan 90s linear infinite; }
+    .cloudy .cloud-one .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-one .c-one {
+      left: 15px;
+      width: 48px;
+      height: 48px; }
+    .cloudy .cloud-one .c-two {
+      top: 15px;
+      width: 22px;
+      height: 22px; }
+    .cloudy .cloud-one .c-three {
+      top: 8px;
+      left: 45px;
+      width: 32px;
+      height: 32px; }
+  .cloudy .cloud-two {
+    position: relative;
+    top: 180px;
+    left: 45px;
+    animation: pan 60s linear infinite; }
+    .cloudy .cloud-two .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-two .c-one {
+      left: 13px;
+      width: 44px;
+      height: 44px; }
+    .cloudy .cloud-two .c-two {
+      top: 15px;
+      width: 20px;
+      height: 20px; }
+    .cloudy .cloud-two .c-three {
+      top: 18px;
+      left: 61px;
+      width: 17px;
+      height: 17px; }
+  .cloudy .cloud-three {
+    position: relative;
+    top: 130px;
+    left: 290px;
+    animation: pan 80s linear infinite; }
+    .cloudy .cloud-three .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-three .c-one {
+      left: 11px;
+      width: 30px;
+      height: 30px; }
+    .cloudy .cloud-three .c-two {
+      top: 6px;
+      width: 20px;
+      height: 20px; }
+    .cloudy .cloud-three .c-three {
+      top: 9px;
+      left: 37px;
+      width: 14px;
+      height: 14px; }
+  .cloudy .cloud-four {
+    position: relative;
+    top: 245px;
+    animation: pan 75s linear infinite; }
+    .cloudy .cloud-four .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-four .c-one {
+      left: 45px;
+      width: 118px;
+      height: 118px; }
+    .cloudy .cloud-four .c-two {
+      top: 40px;
+      width: 72px;
+      height: 72px; }
+    .cloudy .cloud-four .c-three {
+      top: 58px;
+      left: 150px;
+      width: 43px;
+      height: 43px; }
+  .cloudy .cloud-five {
+    position: relative;
+    top: 275px;
+    left: 185px;
+    animation: pan 70s linear infinite; }
+    .cloudy .cloud-five .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-five .c-one {
+      width: 71px;
+      height: 71px; }
+    .cloudy .cloud-five .c-two {
+      top: 18px;
+      left: 57px;
+      width: 33px;
+      height: 33px; }
+  .cloudy .cloud-six {
+    position: relative;
+    top: 305px;
+    left: 250px;
+    animation: pan 75s linear infinite; }
+    .cloudy .cloud-six .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-six .c-one {
+      left: 11px;
+      width: 30px;
+      height: 30px; }
+    .cloudy .cloud-six .c-two {
+      top: 6px;
+      width: 20px;
+      height: 20px; }
+    .cloudy .cloud-six .c-three {
+      top: 9px;
+      left: 37px;
+      width: 14px;
+      height: 14px; }
+  .cloudy .cloud-seven {
+    position: relative;
+    top: 225px;
+    left: 298px;
+    animation: pan 80s linear infinite; }
+    .cloudy .cloud-seven .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-seven .c-one {
+      left: 28px;
+      width: 118px;
+      height: 118px; }
+    .cloudy .cloud-seven .c-two {
+      top: 65px;
+      width: 43px;
+      height: 43px; }
+    .cloudy .cloud-seven .c-three {
+      top: 35px;
+      left: 118px;
+      width: 72px;
+      height: 72px; }
+  .cloudy .cloud-eight {
+    position: relative;
+    left: -375px;
+    top: 245px;
+    animation: pan 80s linear infinite; }
+    .cloudy .cloud-eight .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-eight .c-one {
+      left: 45px;
+      width: 118px;
+      height: 118px; }
+    .cloudy .cloud-eight .c-two {
+      top: 40px;
+      width: 72px;
+      height: 72px; }
+    .cloudy .cloud-eight .c-three {
+      top: 58px;
+      left: 150px;
+      width: 43px;
+      height: 43px; }
+  .cloudy .cloud-nine {
+    position: relative;
+    top: 275px;
+    left: -190px;
+    animation: pan 75s linear infinite; }
+    .cloudy .cloud-nine .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-nine .c-one {
+      width: 71px;
+      height: 71px; }
+    .cloudy .cloud-nine .c-two {
+      top: 18px;
+      left: 57px;
+      width: 33px;
+      height: 33px; }
+  .cloudy .cloud-ten {
+    position: relative;
+    top: 305px;
+    left: -125px;
+    animation: pan 80s linear infinite; }
+    .cloudy .cloud-ten .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-ten .c-one {
+      left: 11px;
+      width: 30px;
+      height: 30px; }
+    .cloudy .cloud-ten .c-two {
+      top: 6px;
+      width: 20px;
+      height: 20px; }
+    .cloudy .cloud-ten .c-three {
+      top: 9px;
+      left: 37px;
+      width: 14px;
+      height: 14px; }
+  .cloudy .cloud-eleven {
+    position: relative;
+    top: 225px;
+    left: -77px;
+    animation: pan 70s linear infinite; }
+    .cloudy .cloud-eleven .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-eleven .c-one {
+      left: 28px;
+      width: 118px;
+      height: 118px; }
+    .cloudy .cloud-eleven .c-two {
+      top: 65px;
+      width: 43px;
+      height: 43px; }
+    .cloudy .cloud-eleven .c-three {
+      top: 35px;
+      left: 118px;
+      width: 72px;
+      height: 72px; }
+  .cloudy .cloud-twelve {
+    position: relative;
+    top: 130px;
+    left: -85px;
+    animation: pan 80s linear infinite; }
+    .cloudy .cloud-twelve .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .cloudy .cloud-twelve .c-one {
+      left: 11px;
+      width: 30px;
+      height: 30px; }
+    .cloudy .cloud-twelve .c-two {
+      top: 6px;
+      width: 20px;
+      height: 20px; }
+    .cloudy .cloud-twelve .c-three {
+      top: 9px;
+      left: 37px;
+      width: 14px;
+      height: 14px; }
+
 .container {
   display: flex;
   justify-content: space-around;
