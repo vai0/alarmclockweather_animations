@@ -18,21 +18,18 @@
       left: -30px;
       width: 72px;
       height: 72px;
-      opacity: 0.95;
     }
     .c-three {
       top: 50px;
       left: 120px;
       width: 43px;
       height: 43px;
-      opacity: .9;
     }
     .c-four {
       top: 50px;
       left: 160px;
       width: 29px;
       height: 29px;
-      opacity: 0.6;
     }
   }
   .cloud-two {
@@ -62,16 +59,16 @@
   }
   .droplet {
     position: absolute;
-    top: -100px;
-    width: 3px;
-    height: 70px;
+    top: -200px;
+    width: 4px;
+    height: 80px;
     background-color: white;
     border-radius: 5px;
-    animation: fall 4s linear infinite;
+    animation: fall 3s linear infinite;
   }
 }
 
 @keyframes fall {
-  0% { transform: translateY(0%); }
-  100% { transform: translateY(6000%); }
+  0% { transform: translateY(0)}
+  100% { transform: translateY(3000%)}
 }

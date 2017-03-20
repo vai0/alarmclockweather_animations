@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   for (var i = 0; i < numberOfDroplets; i++) {
     var left = parseInt(Math.random() * 100);
-    var delay = Math.random().toFixed(3) * 4;
+    var delay = Math.random().toFixed(3) * 3;
     var opacity = Math.random().toFixed(2);
     console.log(left + ' ' + delay);
     createDroplet({
