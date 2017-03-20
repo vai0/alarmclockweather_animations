@@ -1,85 +1,74 @@
-.container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 100vh; }
-  .container .clear-day {
-    position: relative;
-    width: 375px;
-    height: 320px;
-    background-image: linear-gradient(to bottom, #F84E66 0%, #FADE62 100%);
-    overflow: hidden;
-    box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1); }
-    .container .clear-day .cloud {
-      position: relative;
-      animation: pan 60s infinite; }
-      .container .clear-day .cloud .circle {
-        position: absolute;
-        background-color: white;
-        border-radius: 50%; }
-      .container .clear-day .cloud .c-one {
-        top: 150px;
-        left: 19px;
-        width: 30px;
-        height: 30px; }
-      .container .clear-day .cloud .c-two {
-        top: 154px;
-        left: 9px;
-        width: 22px;
-        height: 22px; }
-      .container .clear-day .cloud .c-three {
-        top: 158px;
-        left: 44px;
-        width: 13px;
-        height: 13px; }
-    .container .clear-day .sun {
-      position: absolute;
-      border-radius: 50%;
-      background-color: white;
-      bottom: -80px;
-      left: 35%;
-      width: 140px;
-      height: 140px; }
-    .container .clear-day .sun-ray {
-      position: absolute;
-      border-radius: 50%;
-      background-color: white; }
-    .container .clear-day .r-one {
-      bottom: -160px;
-      left: 30%;
-      width: 270px;
-      height: 270px;
-      opacity: 0.2;
-      animation: ray2 5s infinite; }
-    .container .clear-day .r-two {
-      bottom: -180px;
-      left: 10%;
-      width: 280px;
-      height: 280px;
-      opacity: 0.2;
-      animation: ray3 7s infinite; }
-    .container .clear-day .r-three {
-      bottom: -160px;
-      left: 19%;
-      width: 230px;
-      height: 230px;
-      opacity: 0.3;
-      animation: ray4 4s infinite; }
-    .container .clear-day .r-four {
-      bottom: -160px;
-      left: 28%;
-      width: 240px;
-      height: 240px;
-      opacity: 0.3;
-      animation: ray5 6s infinite; }
-
 @keyframes pan {
   0% {
-    transform: translateX(-17%); }
+    transform: translateX(0%); }
   100% {
-    transform: translateX(105%) scaleX(1.2);
-    opacity: 0.5; } }
+    transform: translateX(105%) scaleX(1.3);
+    opacity: 0.7; } }
+
+.clear-day {
+  background-image: linear-gradient(to bottom, #F84E66 0%, #FADE62 100%); }
+  .clear-day .cloud {
+    position: relative;
+    animation: pan 60s linear infinite; }
+    .clear-day .cloud .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .clear-day .cloud .c-one {
+      top: 150px;
+      left: 19px;
+      width: 30px;
+      height: 30px; }
+    .clear-day .cloud .c-two {
+      top: 154px;
+      left: 9px;
+      width: 22px;
+      height: 22px; }
+    .clear-day .cloud .c-three {
+      top: 158px;
+      left: 44px;
+      width: 13px;
+      height: 13px; }
+  .clear-day .sun {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    bottom: -80px;
+    left: 35%;
+    width: 140px;
+    height: 140px; }
+  .clear-day .sun-ray {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white; }
+  .clear-day .r-one {
+    bottom: -160px;
+    left: 30%;
+    width: 270px;
+    height: 270px;
+    opacity: 0.2;
+    animation: ray2 5s infinite; }
+  .clear-day .r-two {
+    bottom: -180px;
+    left: 10%;
+    width: 280px;
+    height: 280px;
+    opacity: 0.2;
+    animation: ray3 7s infinite; }
+  .clear-day .r-three {
+    bottom: -160px;
+    left: 19%;
+    width: 230px;
+    height: 230px;
+    opacity: 0.3;
+    animation: ray4 4s infinite; }
+  .clear-day .r-four {
+    bottom: -160px;
+    left: 28%;
+    width: 240px;
+    height: 240px;
+    opacity: 0.3;
+    animation: ray5 6s infinite; }
 
 @keyframes ray2 {
   0% {
@@ -116,3 +105,70 @@
     opacity: 0; }
   100% {
     transform: scale(1); } }
+
+.partly-cloudy {
+  background-image: linear-gradient(to bottom, #3EE0F7 0%, #5089F4 100%); }
+  .partly-cloudy .circle {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%; }
+  .partly-cloudy .cloudleft {
+    position: relative;
+    top: 40px;
+    animation: pan 80s linear infinite; }
+    .partly-cloudy .cloudleft .c-one {
+      top: 0;
+      left: -35px;
+      width: 71px;
+      height: 71px; }
+    .partly-cloudy .cloudleft .c-two {
+      top: 20px;
+      left: 23px;
+      width: 33px;
+      height: 33px; }
+  .partly-cloudy .cloudbottom {
+    position: relative;
+    top: 250px;
+    left: 45px;
+    animation: pan 120s linear infinite; }
+    .partly-cloudy .cloudbottom .c-one {
+      left: 40px;
+      width: 103px;
+      height: 103px; }
+    .partly-cloudy .cloudbottom .c-two {
+      top: 35px;
+      width: 65px;
+      height: 63px; }
+    .partly-cloudy .cloudbottom .c-three {
+      top: 50px;
+      left: 130px;
+      width: 38px;
+      height: 38px; }
+    .partly-cloudy .cloudbottom .c-four {
+      top: 13px;
+      left: 165px;
+      width: 24px;
+      height: 24px; }
+  .partly-cloudy .cloudright {
+    position: relative;
+    top: 210px;
+    left: 350px;
+    animation: pan 180s linear infinite; }
+    .partly-cloudy .cloudright .c-one {
+      width: 49px;
+      height: 49px; }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh; }
+
+.weather-container {
+  position: relative;
+  width: 375px;
+  height: 320px;
+  margin: 50px;
+  overflow: hidden;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1); }
