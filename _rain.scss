@@ -1,0 +1,77 @@
+.rain {
+  background-image: linear-gradient(to bottom, #2DAFF6 0%, #75FAE2 100%);
+  .cloud-one {
+    position: relative;
+    top: -65px;
+    .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%;
+    }
+    .c-one {
+      left: 15px;
+      width: 118px;
+      height: 118px;
+    }
+    .c-two {
+      top: 50px;
+      left: -30px;
+      width: 72px;
+      height: 72px;
+      opacity: 0.95;
+    }
+    .c-three {
+      top: 50px;
+      left: 120px;
+      width: 43px;
+      height: 43px;
+      opacity: .9;
+    }
+    .c-four {
+      top: 50px;
+      left: 160px;
+      width: 29px;
+      height: 29px;
+      opacity: 0.6;
+    }
+  }
+  .cloud-two {
+    position: relative;
+    top: 275px;
+    left: 275px;
+    .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%;
+    }
+    .c-one {
+      left: 30px;
+      width: 73px;
+      height: 73px;
+    }
+    .c-two {
+      top: 25px;
+      width: 49px;
+      height: 49px;
+    }
+  }
+  .droplet-container {
+    position: relative;
+    width: 185px;
+    height: 100%;
+  }
+  .droplet {
+    position: absolute;
+    top: -100px;
+    width: 3px;
+    height: 70px;
+    background-color: white;
+    border-radius: 5px;
+    animation: fall 4s linear infinite;
+  }
+}
+
+@keyframes fall {
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(6000%); }
+}
