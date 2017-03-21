@@ -12,7 +12,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', ['browserSync', 'sass'], function() {
-  gulp.watch('*.scss', ['sass']);
+  gulp.watch('./css/*.scss', ['sass']);
 });
 
 gulp.task('browserSync', function() {

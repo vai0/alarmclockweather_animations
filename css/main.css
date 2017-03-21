@@ -492,7 +492,7 @@
     position: absolute;
     top: -200px;
     width: 1px;
-    height: 80px;
+    height: 100px;
     background-color: white;
     border-radius: 5px;
     animation: fall 3s linear infinite; }
@@ -501,13 +501,69 @@
   0% {
     transform: translate(0, 0) rotate(-8deg); }
   100% {
-    transform: translate(695px, 5000px); } }
+    transform: translate(417px, 3000px); } }
 
 @keyframes panNoFade {
   0% {
     transform: translateX(0); }
   100% {
     transform: translateX(375px) scaleX(1.1); } }
+
+.snow {
+  background-image: linear-gradient(to bottom, #B4D6FC 0%, #9CAADE 100%); }
+  .snow .snowflake-container {
+    position: relative;
+    left: -10%;
+    width: 120%;
+    height: 100%; }
+    .snow .snowflake-container .snowflake {
+      position: absolute;
+      top: -30px;
+      height: 20px;
+      width: 20px;
+      background-color: white;
+      border-radius: 50%;
+      animation: snowfalling 10s linear infinite, snowdrifting 4s ease-in-out infinite; }
+  .snow .circle {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%; }
+  .snow .cloud-one {
+    position: relative;
+    top: 245px;
+    left: -100px;
+    animation: pan 80s linear infinite; }
+    .snow .cloud-one .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .snow .cloud-one .c-one {
+      left: 45px;
+      width: 118px;
+      height: 118px; }
+    .snow .cloud-one .c-two {
+      top: 40px;
+      width: 72px;
+      height: 72px; }
+    .snow .cloud-one .c-three {
+      top: 58px;
+      left: 150px;
+      width: 43px;
+      height: 43px; }
+
+@keyframes snowfalling {
+  0% {
+    top: -20%; }
+  100% {
+    top: 120%; } }
+
+@keyframes snowdrifting {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translateX(40px); }
+  100% {
+    transform: translateX(0); } }
 
 .container {
   display: flex;
@@ -523,5 +579,3 @@
   margin: 4%;
   overflow: hidden;
   box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1); }
-  .weather-container:last-child {
-    margin-bottom: 10%; }
