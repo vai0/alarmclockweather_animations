@@ -3,6 +3,7 @@
   .cloud-one {
     position: relative;
     top: -65px;
+    animation: panNoFade 80s linear infinite;
     .circle {
       position: absolute;
       background-color: white;
@@ -34,8 +35,36 @@
   }
   .cloud-two {
     position: relative;
+    top: -70px;
+    left: -210px;
+    animation: panNoFade 70s linear infinite;
+    .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%;
+    }
+    .c-one {
+      left: 28px;
+      width: 118px;
+      height: 118px;
+    }
+    .c-two {
+      top: 65px;
+      width: 43px;
+      height: 43px;
+    }
+    .c-three {
+      top: 35px;
+      left: 118px;
+      width: 72px;
+      height: 72px;
+    }
+  }
+  .cloud-three {
+    position: relative;
     top: 275px;
     left: 275px;
+    animation: panNoFade 100s linear infinite;
     .circle {
       position: absolute;
       background-color: white;
@@ -54,13 +83,15 @@
   }
   .droplet-container {
     position: relative;
-    width: 185px;
+    left: -200px;
+    width: 375px;
     height: 100%;
+    animation: panNoFade 70s linear infinite;
   }
   .droplet {
     position: absolute;
     top: -200px;
-    width: 4px;
+    width: 1px;
     height: 80px;
     background-color: white;
     border-radius: 5px;
@@ -69,6 +100,13 @@
 }
 
 @keyframes fall {
-  0% { transform: translateY(0)}
-  100% { transform: translateY(3000%)}
+  0% { transform: translate(0, 0) rotate(-8deg)}
+  100% { transform: translate(695px, 5000px)}
+}
+
+@keyframes panNoFade {
+  0% { transform: translateX(0); }
+  100% {
+    transform: translateX(375px) scaleX(1.1);
+  }
 }

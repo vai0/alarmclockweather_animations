@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var numberOfDroplets = 20;
+  var numberOfDroplets = 60;
   function createDroplet(input) {
     var dropletContainer = document.querySelector('.droplet-container');
     dropletContainer.insertAdjacentHTML('afterbegin', '<div class="droplet"></div>');

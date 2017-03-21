@@ -3,9 +3,9 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {
-  return gulp.src('*.scss')
+  return gulp.src('./css/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./'))
+    .pipe(gulp.dest('./css'))
     .pipe(browserSync.reload({
       stream: true
     }))

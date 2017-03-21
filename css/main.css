@@ -229,7 +229,7 @@
   .cloudy .cloud-four {
     position: relative;
     top: 245px;
-    animation: pan 75s linear infinite; }
+    animation: pan 40s linear infinite; }
     .cloudy .cloud-four .circle {
       position: absolute;
       background-color: white;
@@ -251,7 +251,7 @@
     position: relative;
     top: 275px;
     left: 185px;
-    animation: pan 70s linear infinite; }
+    animation: pan 50s linear infinite; }
     .cloudy .cloud-five .circle {
       position: absolute;
       background-color: white;
@@ -268,7 +268,7 @@
     position: relative;
     top: 305px;
     left: 250px;
-    animation: pan 75s linear infinite; }
+    animation: pan 35s linear infinite; }
     .cloudy .cloud-six .circle {
       position: absolute;
       background-color: white;
@@ -290,7 +290,7 @@
     position: relative;
     top: 225px;
     left: 298px;
-    animation: pan 80s linear infinite; }
+    animation: pan 45s linear infinite; }
     .cloudy .cloud-seven .circle {
       position: absolute;
       background-color: white;
@@ -312,7 +312,7 @@
     position: relative;
     left: -375px;
     top: 245px;
-    animation: pan 80s linear infinite; }
+    animation: pan 40s linear infinite; }
     .cloudy .cloud-eight .circle {
       position: absolute;
       background-color: white;
@@ -334,7 +334,7 @@
     position: relative;
     top: 275px;
     left: -190px;
-    animation: pan 75s linear infinite; }
+    animation: pan 50s linear infinite; }
     .cloudy .cloud-nine .circle {
       position: absolute;
       background-color: white;
@@ -351,7 +351,7 @@
     position: relative;
     top: 305px;
     left: -125px;
-    animation: pan 80s linear infinite; }
+    animation: pan 40s linear infinite; }
     .cloudy .cloud-ten .circle {
       position: absolute;
       background-color: white;
@@ -395,7 +395,7 @@
     position: relative;
     top: 130px;
     left: -85px;
-    animation: pan 80s linear infinite; }
+    animation: pan 45s linear infinite; }
     .cloudy .cloud-twelve .circle {
       position: absolute;
       background-color: white;
@@ -418,7 +418,8 @@
   background-image: linear-gradient(to bottom, #2DAFF6 0%, #75FAE2 100%); }
   .rain .cloud-one {
     position: relative;
-    top: -65px; }
+    top: -65px;
+    animation: panNoFade 80s linear infinite; }
     .rain .cloud-one .circle {
       position: absolute;
       background-color: white;
@@ -444,28 +445,53 @@
       height: 29px; }
   .rain .cloud-two {
     position: relative;
-    top: 275px;
-    left: 275px; }
+    top: -70px;
+    left: -210px;
+    animation: panNoFade 70s linear infinite; }
     .rain .cloud-two .circle {
       position: absolute;
       background-color: white;
       border-radius: 50%; }
     .rain .cloud-two .c-one {
+      left: 28px;
+      width: 118px;
+      height: 118px; }
+    .rain .cloud-two .c-two {
+      top: 65px;
+      width: 43px;
+      height: 43px; }
+    .rain .cloud-two .c-three {
+      top: 35px;
+      left: 118px;
+      width: 72px;
+      height: 72px; }
+  .rain .cloud-three {
+    position: relative;
+    top: 275px;
+    left: 275px;
+    animation: panNoFade 100s linear infinite; }
+    .rain .cloud-three .circle {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%; }
+    .rain .cloud-three .c-one {
       left: 30px;
       width: 73px;
       height: 73px; }
-    .rain .cloud-two .c-two {
+    .rain .cloud-three .c-two {
       top: 25px;
       width: 49px;
       height: 49px; }
   .rain .droplet-container {
     position: relative;
-    width: 185px;
-    height: 100%; }
+    left: -200px;
+    width: 375px;
+    height: 100%;
+    animation: panNoFade 70s linear infinite; }
   .rain .droplet {
     position: absolute;
     top: -200px;
-    width: 4px;
+    width: 1px;
     height: 80px;
     background-color: white;
     border-radius: 5px;
@@ -473,9 +499,15 @@
 
 @keyframes fall {
   0% {
-    transform: translateY(0); }
+    transform: translate(0, 0) rotate(-8deg); }
   100% {
-    transform: translateY(3000%); } }
+    transform: translate(695px, 5000px); } }
+
+@keyframes panNoFade {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(375px) scaleX(1.1); } }
 
 .container {
   display: flex;
@@ -488,6 +520,8 @@
   position: relative;
   width: 375px;
   height: 320px;
-  margin: 5%;
+  margin: 4%;
   overflow: hidden;
   box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1); }
+  .weather-container:last-child {
+    margin-bottom: 10%; }
