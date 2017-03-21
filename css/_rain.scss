@@ -103,10 +103,3 @@
   0% { transform: translate(0, 0) rotate(-8deg)}
   100% { transform: translate(417px, 3000px)}
 }
-
-@keyframes panNoFade {
-  0% { transform: translateX(0); }
-  100% {
-    transform: translateX(375px) scaleX(1.1);
-  }
-}

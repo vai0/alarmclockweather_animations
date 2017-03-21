@@ -6,6 +6,13 @@
   }
 }
 
+@keyframes panNoFade {
+  0% { transform: translateX(0); }
+  100% {
+    transform: translateX(375px) scaleX(1.1);
+  }
+}
+
 @import '_clear-day';
 @import '_partly-cloudy';
 @import '_cloudy';

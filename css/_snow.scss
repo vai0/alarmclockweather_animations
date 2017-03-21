@@ -23,9 +23,9 @@
   }
   .cloud-one {
     position: relative;
-    top: 245px;
+    top: 255px;
     left: -100px;
-    animation: pan 80s linear infinite;
+    animation: panNoFade 80s linear infinite;
     .circle {
       position: absolute;
       background-color: white;
