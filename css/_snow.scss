@@ -12,6 +12,7 @@
       width: 20px;
       background-color: white;
       border-radius: 50%;
+      z-index: 9999;
       animation: snowfalling 10s linear infinite,
                 snowdrifting 4s ease-in-out infinite;
     }

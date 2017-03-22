@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-
-  var numberOfDroplets = 120;
-  var numberOfSnowflakes = 50;
+  var numberOfDroplets = 60;
+  var numberOfSnowflakes = 30;
 
   function createDroplet(input) {
     var dropletContainer = document.querySelector('.droplet-container');
@@ -53,4 +52,4 @@ document.addEventListener('DOMContentLoaded', function() {
       opacity: opacity
     });
   }
-});
+})
