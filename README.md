@@ -6,4 +6,4 @@ CSS3 animations and a bit of Javascript for snow and rain. No external libraries
 
 Build SCSS files with included Gulp file.
 
-[Demo](https://justinchi.me/alarmclockweather)
+[Demo](https://weather-anim.justinchi.me/)
